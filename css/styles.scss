@@ -1,98 +1,130 @@
-/* Color of SSC logo: #033A83 */
-/* Primary colors: Buttons, jumbotron paragraph, card headers */
-/* Secondary colors: Card body text, footer text, navbar */
-/* Neutral colors: body background, "lorum ipsum" text, contrast to primary colors */
+// Primary colors: Logo, buttons, jumbotron paragraph, card headers
+// Secondary colors: Jumbotron minor links, card body text, footer text, navbar
+// Neutral colors: body background, "lorum ipsum" text, contrast to primary colors
+
+// Color system
+$blue:    #033A83 !default; // set to SSC logo color
+$indigo:  #5F4300 !default;
+$purple:  #A8AABC !default;
+$pink:    #874100 !default;
+$red:     #7B0E29!default;
+$orange:  #D1A617 !default;
+$yellow:  #FFF7D6 !default;
+$green:   #00B389 !default;
+$teal:    #006979 !default;
+$cyan:    #00BDD0 !default;
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$info:          $cyan !default;
+$success:       $green !default;
+$danger:        $orange !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
 
-$color-primary: #033A83;
-$color-secondary: #888EBA;
-$color-success: ;
-$color-danger: ;
-$color-warning: ;
-$color-info: ;
-$color-light: #FFF7D6;
-$color-dark: #60106b;
-$color-muted: ;
-$color-white: ;
-$color-transparent-black: rgba(0, 0, 0, 0.5);
-
+// Body style
 body {
-    font-family: "Open Sans", sans-serif;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arial", sans-serif;
+    background-color: $indigo;
+    color: $dark;
     font-size: medium;
-    background-color: #F1F1E6;
-   }
-
-
-h1, h2, h3 {
-    font-family: "Open Sans", sans-serif;
 }
 
-h2 {
-    color: #3046C5;
-}
-
-
-h2 {
-    color: #168581;
-    font-weight: bold;
-    font-size: 2rem;
-  }
-
-.card-header {
-  color: #168581;
-  font-weight: bold;
-}
-
-header {
-    h2 {
-        color: $color-pale;
+// Jumbotron styles
+.jumbotron {
+    background-color: $white;
+    padding-top: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    a {
+        font-family: "Poppins", sans-serif;
+        font-weight: normal;
+        color: $secondary;
+        font-size: 1rem;
+    }
+    
+    p {
+        font-family: "Poppins", sans-serif;
+        font-weight: bolder;
+        font-size: 1.25rem;
+        color: $green;
     }
 }
 
-.site-footer{
-    /* background-image: linear-gradient(#b7a8f8, white); */
-    padding: 20px 0px;
+// Navbar styles
+.navbar {
+    .search {
+        color: $white;
+    }
 }
 
-.jumbotron {
-    margin: 0;
-    padding: 10px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    background-color: #FFF7D6;
+.navbar-dark {
+    background-color: $teal;
 }
 
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            color: $gray-400;
+        }
+    }
+}
+
+// Carousel styles
 .row-content {
     padding: 50px 0;
     /* border-bottom: 1px ridge; */
     min-height: 200px;
 }
-  
-/* Trick that Emmanuel showed me */
-.navbar-dark {
-    background-color: #168581;
-  }
-
-.card-bg {
-width: 100%;
-background-color: #F7F8FF;
-}
-
-
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel {
-    border: solid #5637DD;
+    border: solid $orange;
 }
 
 #carouselButton {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.btn-emphasis {
+    background-color: $blue;
+    color: $gray-400;
+}
+
+h2 {
+    color: $blue;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+// Accordion card styles
+.card-header {
+  color: $teal;
+  font-weight: bold;
+}
+
+.card-bg {
+    width: 100%;
+    background-color: $yellow;
+    }    
+
+.card-body {
+    .nav-link {
+        color: $blue;
+    }
+}
+
+.site-footer{
+    background-image: linear-gradient($blue, $white);
+    padding: 20px 0px;
 }
