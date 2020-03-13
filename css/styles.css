@@ -1,93 +1,102 @@
-/* Color of SSC logo: #033A83 */
-/* Primary colors: Buttons, jumbotron paragraph, card headers */
-/* Secondary colors: Card body text, footer text, navbar */
-/* Neutral colors: body background, "lorum ipsum" text, contrast to primary colors */
-/* $body-bg: #F1F1E6;
-$body-color: */
-/* $color-primary: #033A83;
-$color-secondary: #888EBA;
-$color-success: #D1A617;
-$color-danger: #7BB6B2;
-$color-warning: #856914;
-$color-info: ;
-$color-light: #FFF7D6;
-$color-dark: #60106b;
-$color-muted: #874100;
-$color-white: #006979;
-$color-transparent-black: rgba(0, 0, 0, 0.5); */
 body {
   font-family: "Arial", sans-serif;
-  background-color: #5F4300;
-  color: #343a40;
   font-size: medium; }
 
 .jumbotron {
-  background-color: #fff;
-  padding-top: 0rem;
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF;
+  padding-top: 0.5rem;
   padding-right: 1rem;
   padding-left: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 0; }
-  .jumbotron a {
-    font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    color: #6c757d;
-    font-size: 1rem; }
-  .jumbotron p {
-    font-family: "Poppins", sans-serif;
-    font-weight: bolder;
-    font-size: 1.25rem;
-    color: #00B389; }
+
+.custom-link {
+  color: red;
+  text-decoration: none; }
+
+.custom-link:hover {
+  color: orange;
+  text-decoration: none; }
+
+p {
+  font-weight: bolder;
+  font-size: 1.25rem;
+  color: #7B0E29; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
 
 .navbar .search {
   color: #fff; }
 
-/* Trick that Emmanuel showed me for navbar background color */
 .navbar-dark {
   background-color: #006979; }
 
 .navbar-nav .nav-item .nav-link {
   color: #ced4da; }
 
+.navbar-nav .nav-item .nav-link:hover {
+  color: #D1A617; }
+
+#sidebyside.container {
+  margin-top: 40px; }
+
+/* 
+.row-carousel {
+    padding: 50px 0;
+    min-height: 200px;
+}
+
+a.carousel {
+    color: $orange;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.carousel {
+    border: solid $orange;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+// ??? What is this? Next .btn-emphasis under .btn.
+.btn {
+
+}
+
 .btn-emphasis {
-  background-color: #033A83;
-  color: #ced4da; }
-
-.card-body .nav-link {
-  color: #033A83; }
-
-h1, h2, h3 {
-  font-family: "Lobster", sans-serif; }
+    background-color: $blue;
+    color: $gray-400;
+}
 
 h2 {
-  color: #033A83;
-  font-weight: bold;
-  font-size: 2rem; }
-
+    color: $blue;
+    font-weight: bold;
+    font-size: 2rem;
+}
+*/
 .card-header {
   color: #006979;
   font-weight: bold; }
-
-.site-footer {
-  background-image: linear-gradient(#033A83, #fff);
-  padding: 20px 0px; }
-
-.row-content {
-  padding: 50px 0;
-  /* border-bottom: 1px ridge; */
-  min-height: 200px; }
 
 .card-bg {
   width: 100%;
   background-color: #FFF7D6; }
 
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
+.card-body .nav-link {
+  color: #033A83; }
 
-.carousel {
-  border: solid #D1A617; }
-
-#carouselButton {
-  position: absolute;
-  right: 0;
-  bottom: 0; }
+footer {
+  margin-top: 50px; }

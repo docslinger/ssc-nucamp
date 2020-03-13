@@ -1,18 +1,35 @@
 // Primary colors: Logo, buttons, jumbotron paragraph, card headers
-// Secondary colors: Jumbotron minor links, card body text, footer text, navbar
-// Neutral colors: body background, "lorum ipsum" text, contrast to primary colors
+// Secondary colors (= lower opacity): Jumbotron minor links, card body text, footer text, navbar
+// Neutral colors (some lower opacity): body background, "lorum ipsum" text, need contrast to primary colors
+
+// ColorSpace: https://mycolor.space/?hex=%23033A83&sub=1, color palettes for #033A83 logo color
+
 
 // Color system
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
 $blue:    #033A83 !default; // set to SSC logo color
-$indigo:  #5F4300 !default;
-$purple:  #A8AABC !default;
-$pink:    #874100 !default;
+$indigo:  #4D499B !default;
+$purple:  #7F58B0 !default;
+$pink:    #FF88DB !default;
 $red:     #7B0E29!default;
 $orange:  #D1A617 !default;
 $yellow:  #FFF7D6 !default;
 $green:   #00B389 !default;
 $teal:    #006979 !default;
 $cyan:    #00BDD0 !default;
+
 
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
@@ -28,35 +45,45 @@ $dark:          $gray-800 !default;
 // Body style
 body {
     font-family: "Arial", sans-serif;
-    background-color: $indigo;
-    color: $dark;
+    //color: $dark;
     font-size: medium;
 }
 
+
 // Jumbotron styles
-.jumbotron {
-    background-color: $white;
-    padding-top: 0rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 0;
-    a {
+    .jumbotron {
         font-family: "Poppins", sans-serif;
-        font-weight: normal;
-        color: $secondary;
-        font-size: 1rem;
+        background-color: #FFF; // Stuck using pure white because of the logo/antialiasing problem
+        padding-top: 0.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
     }
-    
+
+    .custom-link {
+        color: red;
+        text-decoration: none;
+    }
+    .custom-link:hover {
+        color: orange;
+        text-decoration: none;
+    }
+
     p {
-        font-family: "Poppins", sans-serif;
         font-weight: bolder;
         font-size: 1.25rem;
-        color: $green;
+        color: #7B0E29;
     }
-}
 
 // Navbar styles
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+
 .navbar {
     .search {
         color: $white;
@@ -72,19 +99,36 @@ body {
         .nav-link {
             color: $gray-400;
         }
+        .nav-link:hover {
+            color: $orange;
+        }
     }
 }
 
-// Carousel styles
-.row-content {
+
+
+#sidebyside.container {
+    margin-top: 40px;
+}
+
+
+// Carousel styles, delete these if I end up dropping the carousel
+/* 
+.row-carousel {
     padding: 50px 0;
-    /* border-bottom: 1px ridge; */
     min-height: 200px;
+}
+
+a.carousel {
+    color: $orange;
 }
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
+    // background-color: rgba(0, 0, 0, 0.5);
+
 }
+
 
 .carousel {
     border: solid $orange;
@@ -94,6 +138,11 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+// ??? What is this? Next .btn-emphasis under .btn.
+.btn {
+
 }
 
 .btn-emphasis {
@@ -106,25 +155,26 @@ h2 {
     font-weight: bold;
     font-size: 2rem;
 }
+*/
+
 
 // Accordion card styles
 .card-header {
-  color: $teal;
-  font-weight: bold;
-}
+    color: $teal;
+    font-weight: bold;
+  }
+  
+  .card-bg {
+      width: 100%;
+      background-color: $yellow;
+      }    
+  
+  .card-body {
+      .nav-link {
+          color: $blue;
+      }
+  }
 
-.card-bg {
-    width: 100%;
-    background-color: $yellow;
-    }    
-
-.card-body {
-    .nav-link {
-        color: $blue;
-    }
-}
-
-.site-footer{
-    background-image: linear-gradient($blue, $white);
-    padding: 20px 0px;
+footer {
+    margin-top: 50px;
 }
