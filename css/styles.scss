@@ -41,14 +41,12 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-
 // Body style
 body {
     font-family: "Arial", sans-serif;
     //color: $dark;
     font-size: medium;
 }
-
 
 // Jumbotron styles
     .jumbotron {
@@ -76,14 +74,14 @@ body {
         color: #7B0E29;
     }
 
+
 // Navbar styles
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
   
-
 .navbar {
     .search {
         color: $white;
@@ -91,6 +89,7 @@ body {
 }
 
 .navbar-dark {
+    overflow: hidden;
     background-color: $teal;
 }
 
@@ -98,17 +97,29 @@ body {
     .nav-item {
         .nav-link {
             color: $gray-400;
+            float: left;
+            display: block;
+            text-align: center;
+            text-decoration: none;
         }
         .nav-link:hover {
             color: $orange;
+            float: left;
+            display: block;
+            text-align: center;
+            text-decoration: none;
         }
     }
 }
 
-
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    float: none;
+    width: 100%;
+}
 
 #sidebyside.container {
-    margin-top: 40px;
+    margin-top: 40px; 
 }
 
 

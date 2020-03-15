@@ -2,6 +2,10 @@ body {
   font-family: "Arial", sans-serif;
   font-size: medium; }
 
+/* 
+.fa {
+    display:inline-block;
+   } */
 .jumbotron {
   font-family: "Poppins", sans-serif;
   background-color: #FFF;
@@ -33,13 +37,27 @@ p {
   color: #fff; }
 
 .navbar-dark {
+  overflow: hidden;
   background-color: #006979; }
 
 .navbar-nav .nav-item .nav-link {
-  color: #ced4da; }
+  color: #ced4da;
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
 
 .navbar-nav .nav-item .nav-link:hover {
-  color: #D1A617; }
+  color: #D1A617;
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none; }
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  float: none;
+  width: 100%; }
 
 #sidebyside.container {
   margin-top: 40px; }

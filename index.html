@@ -51,42 +51,37 @@
     <main>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-            <div class = "container">
-                <div class="collapse navbar-collapse" id="navbar"> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                        <ul class="navbar-nav mr-auto">
-                            <!-- Nav items / links on the navbar -->
-                            <li class="nav-item"><a class="nav-link" href="stub.html">
-                                Recycling Guide</a></li>
-                            <li class="nav-item"><a class="nav-link" href="stub.html">
-                                Drop-off Locations</a></li>
-                            <li class="nav-item"><a class="nav-link" href="stub.html">
-                                Collection Schedule</a></li>
+                    <ul class="navbar-nav mr-auto">
+                        <!-- Nav items / links on the navbar -->
+                        <li class="nav-item"><a class="nav-link" href="stub.html">
+                            Recycling Guide</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stub.html">
+                            Drop-off Locations</a></li>
+                        <li class="nav-item"><a class="nav-link" href="stub.html">
+                            Collection Schedule</a></li>
                     </ul>
+                
                     <!-- Search form -->
-                    <form class="form-inline d-flex justify-content-center">
-                        <input class="form-control form-control-sm mr-3" type="text" placeholder="Search">
+                    <form class="form-inline d-flex justify-content-left">
+                        <input class="form-control form-control-xs mr-3 ml-navbar w-75" type="text" placeholder="Search">
                         <i class="fa fa-search fa-lg search"></i>
                     </form>
-                </div>
-            </div>
         </nav>
 
         <!-- Container for photos and accordion cards -->
         <div class = "container" id = "sidebyside">
             <div class = "row">
                 <!-- Photos-->
-                <div class="col-6">
+                <div class="col-xs-12 col-sm">
                             <div class = "col">
-                                <img src="img/ssc-2.jpg" class="img-fluid" />
+                                <img src="img/ssc-2.jpg" class="img-fluid"/>
                                 <img src="img/ssc-3.jpg" class="img-fluid" />
                             </div>
                 </div>
             <!-- Accordion/cards -->
-                <div class = "col">
+                <div class = "col-xs-12 col-sm">
                     <div id="accordion">
+                        <!-- Residential card -->
                         <div class="card card-bg">
                             <div role="tab" class="card-header">
                                 <h2>
@@ -112,6 +107,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Commercial card -->
                         <div class="card card-bg">
                             <div role="tab" class="card-header">
                                 <h2>
@@ -137,6 +133,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Education card -->
                         <div class="card card-bg">
                             <div role="tab" class="card-header">
                                 <h2>
@@ -161,6 +158,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- News & Events card -->
                         <div class="card card-bg">
                             <div role="tab" class="card-header">
                                 <h2>
@@ -195,10 +193,10 @@
     <footer>
         <div class="container">
             <div class = "row">
-                <div class = "col-4">
-                    <p>&copy; 2020 Sanitary Service Company, Inc.</p>
+                <div class = "col-5">
+                    <p>&copy; 2020 Sanitary Service Company Inc.</p>
                 </div>
-                <div class = "col-4 text-center">
+                <div class = "col-3 text-center">
                     <p>All rights reserved.</p>
                 </div>
                 <div class = "col-4 text-right">
